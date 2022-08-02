@@ -2,6 +2,9 @@ import express from 'express';
 import mongoose from 'mongoose';
 import authRouter from './authRouter.js';
 import cors from 'cors'
+import env from 'dotenv'
+
+env.config()
 
 const PORT = process.env.PORT || 5000
 const DATABASE_URL = process.env.DATABASE_URL

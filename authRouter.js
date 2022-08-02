@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import Questions from './Schema.js'
-import QuestionsRes from './Schema.js'
+import QuestionsRes from './SchemaRes.js'
 
 const router = new Router()
 
