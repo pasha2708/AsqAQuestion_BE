@@ -9,13 +9,11 @@ env.config();
 const PORT = process.env.PORT || 5000;
 const DATABASE_URL = process.env.DATABASE_URL;
 
-
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 app.use(authRouter);
-app.use(express.static("public"));
 
 const start = async () => {
   try {
